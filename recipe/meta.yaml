@@ -1,5 +1,5 @@
 {% set name = "google-analytics-admin" %}
-{% set version = "0.22.7" %}
+{% set version = "0.22.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/google-analytics-admin-{{ version }}.tar.gz
-  sha256: 9546afaddf7ee275ec4729de6da8b15f27d4d245ee8896f80800e22572fc7987
+  sha256: 1ce2e6550dc4dbad890545869e25d1e38c1caa75ea95f539725f669a3c3b10a4
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - google-api-core-grpc
     - google-auth >=2.14.1,<3.0.0dev,!=2.24.0,!=2.25.0
     - proto-plus >=1.22.3,<2.0.0dev
-    - protobuf >=3.19.5,<5.0.0dev,!=3.20.0,!=3.20.1,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
+    - protobuf >=3.20.2,<6.0.0dev,!=4.21.0,!=4.21.1,!=4.21.2,!=4.21.3,!=4.21.4,!=4.21.5
 
 test:
   imports:
