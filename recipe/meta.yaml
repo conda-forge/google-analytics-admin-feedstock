@@ -1,5 +1,5 @@
 {% set name = "google-analytics-admin" %}
-{% set version = "0.23.4" %}
+{% set version = "0.23.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: bc1ed7607df95cdc6fef579122a0114c4373fa89386c103e236025131fbb9605
+  sha256: 91930dae9fc444ec1db21a8da411b8f0a24bbc9de66c1e51676817f8341847dd
 
 build:
   noarch: python
