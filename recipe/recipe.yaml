@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-analytics-admin
-  version: "0.29.0"
+  version: "0.30.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_analytics_admin-${{ version }}.tar.gz
-  sha256: 59e53aa082687269ea1dff0bb0bd60898b901849e20fd1e99d12d48dbba27541
+  sha256: 83673b166a5011781c1e904294bd85479f96ecc7f68142f7ce8d816177689925
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - setuptools
   run:
     - python >=${{ python_min }}
-    - google-api-core >=2.11.0,<3.0.0
+    - google-api-core >=2.17.1,<3.0.0
     - google-api-core-grpc
     - google-auth >=2.14.1,<3.0.0,!=2.24.0,!=2.25.0
     # more restrictive constraint for python 3.14
