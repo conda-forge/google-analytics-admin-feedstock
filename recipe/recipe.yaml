@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: google-analytics-admin
-  version: "0.30.0"
+  version: "0.30.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/google_analytics_admin-${{ version }}.tar.gz
-  sha256: 83673b166a5011781c1e904294bd85479f96ecc7f68142f7ce8d816177689925
+  sha256: cc8b150217dbec45708867d9d81216e8a10e0f6d432e5e6ac66da2a83d4119b6
 
 build:
   number: 0
